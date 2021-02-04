@@ -1,1 +1,181 @@
 
+<!-- Created by Chiku -->
+
+<!-- 
+Made by Charitra Agarwal
+Dont copy this code without my permission.
+
+Please upvote and share if you liked this code.
+Thank you all.
+ -->
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Android Clone</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert"></script>
+  </head>
+   
+  <body>
+  
+  <!--Loader animation-->
+    <div id="loader-anim">
+      <div>
+        <a>Loading Device...</a>
+        <img src="https://wpamelia.com/wp-content/uploads/2018/11/ezgif-2-9d94781b522f.gif" />
+        <a>This might take a while</a>
+      </div>
+    </div><!--Loader animation-->
+  
+  <!--Main div tag-->
+    <div id="device">
+    
+    <!--Top bar elements-->
+      <div id="earpiece"></div>
+      <img id="cameralens" src="https://www.freepngimg.com/download/camera_lens/25237-6-camera-lens.png"/>
+      <span id="sensor1">&middot;</span>
+      <span id="sensor2">&middot;</span>
+    
+    
+    
+    <!--Elements of phone mid body-->
+      <div id="powerbutton"></div>
+     
+     
+      
+    <!-- Visual part of phone -->
+      <div id="screen">
+      
+      <!-- Lockscreen display elements -->
+        <div id="lockscreen">
+          <span id="lockscreentime"></span>
+          <span id="lockscreenday"></span>
+          <span id="lockscreendate"></span>
+          <div id="lockscreenbattery"><i class="material-icons batteryicon">battery_std</i><span class="batterylevel"></span></div>
+          <div id="finger"><i class="material-icons" id="fingerprint">fingerprint</i></div>
+        </div>
+        
+        
+        <!-- Home Screen -->
+        <div id="homescreen">
+        <!-- Background of screen -->
+          <div id="screenbackground">
+          
+            <script type="text/javascript"> 
+            $('#screenbackground').hide();
+            //hide the background while the images load, ready to fade in later
+            </script>
+            
+            <img class="activebg" src= "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRTeT1lYUMltcYdfXYdVOOLX88-TVE9UB3RVw&usqp=CAU"/>
+            <img src= "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSaQXEdnIvQfyr83aTMZMBAhvs1kSlls0IRQg&usqp=CAU"/>
+            <img src= "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSeXJ7yQevKkyy3BTvgmJfO6T9Ld5OAlNDyJg&usqp=CAU"/>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR7qWpFjutZPudu6lRyTOvLPqzTXA5Cyg9RVg&usqp=CAU"/>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRmhWYtVJNPxjXduh7uYVsjSNV0LIA9oNM2YA&usqp=CAU"/>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTTqgdEdGf0nWiv_Rphsy1d8YR-KpTakaes7g&usqp=CAU"/>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSojC0iUW06kn4zs4juvy00ehikUKmk4bO0kA&usqp=CAU"/>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT0Iqm6qyCdkOrNfnKeP2UklviSXIhAVluABg&usqp=CAU"/>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS2uSlpUMgmMG2PWP365WrCz4ureYUYWEA9HQ&usqp=CAU"/>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR0iJPToBJ2f4mgm0hGUXeNwBFtsPbPOWI1_Q&usqp=CAU"/>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS9KqniUpKRQpL9CORm9pAp8bT7ohjMU3d07Q&usqp=CAU"/>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSnguUK7ihBLkW5UhnHsUFD3rPYEJcaQyXVYw&usqp=CAU"/>
+          </div  
+        <!--Background of screen end -->
+        
+        
+        <!-- Status bar display -->
+          <div id="statusbar">
+            <div class="battery"><i class="material-icons batteryicon">battery_std</i><span class="batterylevel"></span></div>     
+            <div class="time"></div>   
+          </div>
+          
+        
+        <!--Device main content display-->
+          <div id="contentdisplay">
+          <!-- Apps list -->
+            <div id="appdrawer">
+          
+              <div class="approw">
+                <figure id="app-chrome"><img src="https://icons-for-free.com/iconfiles/png/512/chrome+icon-1320167911836317295.png" /><figcaption>Chrome</figcaption></figure>
+              
+                <figure id="app-sololearn"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSK5eVnseleb1pHwHafYWEqLI7qe04TFc8_2Q&usqp=CAU"/><figcaption>Sololearn</figcaption></figure>
+              
+                <figure id="app-calculator"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/GNOME_Calculator_icon_2018.svg/600px-GNOME_Calculator_icon_2018.svg.png"/><figcaption>Calculator</figcaption></figure>
+              
+                <figure id="app-clock"><img src="https://i.pinimg.com/originals/0e/7b/ff/0e7bff69f6a761b0071ca69c95855ed9.png"/><figcaption>Clock</figcaption></figure>
+              </div>
+            
+            
+              <div class="approw">
+                <figure id="app-weather"><img src="https://icon-library.com/images/weather-icon-android/weather-icon-android-7.jpg"/><figcaption>Weather</figcaption></figure>
+              
+                <figure id="app-calendar"><img src="https://play-lh.googleusercontent.com/oGR9I1X9No3SfFEXrq655tETtVVzI3jIphhmEVPGPEVuM5gfwh8lOGWHQFf6gjSTvw"/><figcaption>Calendar</figcaption></figure>
+              
+                <figure id="app-whatsapp"><img src="https://img.icons8.com/plasticine/2x/whatsapp.png"/><figcaption>WhatsApp</figcaption></figure>
+              
+                <figure id="app-phone"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSeQx6_J49OGuHVwC6pA9DFgnOUps_d3ULgUw&usqp=CAU"/><figcaption>Phone</figcaption></figure>
+              </div>
+            
+            
+              <div class="approw">
+                <figure id="app-mail"><img src="https://i.pinimg.com/originals/69/31/ef/6931ef707a92e6d0311b4ff946d00784.png"/><figcaption>Mail</figcaption></figure>
+              
+                <figure id="app-youtube"><img src="https://www.iconfinder.com/data/icons/social-media-2210/24/Youtube-512.png"/><figcaption>YouTube</figcaption></figure>
+              
+                <figure id="app-info"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSY_FwMpY_FtvedJ4EFQqoyIinz4EekWc7zwA&usqp=CAU"/><figcaption>Info</figcaption></figure>
+              
+                <figure id="app-share"><img src="https://www.iconfinder.com/data/icons/flat-circle-content/800/circle-content-share-social-512.png"/><figcaption>Share</figcaption></figure> 
+              </div>
+          
+          
+            </div><!--App drawer end-->
+            
+            
+          <!-- App Screen Display -->
+            <div class="app-screen">
+              <iframe id="chromedisplay" src="https://www.google.com/webhp?igu=1">This is bing</iframe>
+              
+              <iframe id="sololearndisplay" src="https://www.sololearn.com/Profile/11988385"></iframe>
+              
+              <iframe id="calculatordisplay" src='https://www.embed.com/app/calculator/gray-calculator.html'></iframe>
+              
+              <iframe id="clockdisplay" clocktype="html5" src="https://www.clocklink.com/html5embed.php?clock=041&timezone=GMT0530&color=green&size=150&Title=&Message=&Target=&From=2020,1,1,0,0,0&Color=green"></iframe>
+              
+              <a id="weatherdisplay" class="weatherwidget-io" href="https://forecast7.com/en/22d8086d20/jamshedpur/" data-label_1="JAMSHEDPUR" data-label_2="Jharkhand, India" data-font="Ubuntu" data-icons="Climacons Animated" data-days="5" data-theme="marine" data-lowcolor="#ffffff" >JAMSHEDPUR Jharkhand, India</a>
+              <script>
+                !function(d,s,id){
+                  var js,fjs=d.getElementsByTagName(s)[0];
+                  if(!d.getElementById(id)){
+                    js=d.createElement(s);
+                    js.id=id;
+                    js.src = 'https://weatherwidget.io/js/widget.min.js';
+                    fjs.parentNode.insertBefore(js,fjs);
+                  }
+                }
+                (document,'script','weatherwidget-io-js');
+              </script><!--Weather end-->
+        
+            </div><!--App Screen Display-->
+          
+          
+          
+          
+          
+          </div><!--Device main content display-->
+
+        </div><!--Home screen end-->
+        
+      </div><!--Screen end-->
+      
+    <!--Phone navigation bar-->
+      <div id="navbuttonbar">
+        <button id="navrecent"><span><b>&#9633;</b></span></button>
+        <button id="navhome"><span><b>&#9711;</b></span></button>
+        <button id="navback"><span><b>&#9665;</b></span></button>
+      </div><!--Navigation bar-->    
+    </div><!--Main div end-->
+  </body>
+</html>
