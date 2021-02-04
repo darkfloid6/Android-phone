@@ -1,1 +1,289 @@
 
+/* Created by Chiku */
+
+/*
+Made by Charitra Agarwal
+Dont copy this code without my permission.
+
+Please upvote and share if you liked this code.
+Thank you all.
+*/
+
+body{
+    background-color: black;
+}
+
+/* Loader animation */
+#loader-anim{
+    background-color: black;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#loader-anim div img{
+    width: 90vw;
+    height: auto;
+    margin: 5vw;
+}
+#loader-anim a{
+    font-family: serif;
+    font-size: 5vw;
+}
+
+
+/* Phone header elements */
+#cameralens{
+    position: absolute;
+    width: 2.5vh;
+    height: 2.5vh;
+    margin-left: 22vw;
+    top: 3%;
+}
+#earpiece{
+    background-color: rgba(150,150,150);
+    width: 20vw;
+    height: 1vh;
+    border-radius: 20%;
+    margin: auto;
+    margin-top: 3.5vh;
+}
+#sensor1{
+    position: absolute;
+    color: purple;
+    font-size: 10vh;
+    top: -1.8%;
+    left: 65%;
+}
+#sensor2{
+    position: absolute;
+    color: purple;
+    font-size: 10vh;
+    top: -1.8%;
+    left: 66%;
+}
+
+
+/* Phone physical central elements */
+#powerbutton{
+    background-color: rgba(0,0,0,0.8);
+    width: 2vw;
+    height: 7vh;
+    border-radius: 20%;
+    margin-left: 79.7vw;
+    margin-top: 15vh;
+}
+#device{
+    background-color: rgba(30,30,30,1);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 80vw;
+    height: 95vh;
+    border-radius: 3%;
+    display: none;
+    box-shadow: 0 0 50px 5vw white;
+}
+
+
+/* Phone Navigation bar */
+#navbuttonbar{
+    background-color: rgba(30,30,30,1);
+    position: absolute;
+    width: 72vw;
+    height: 7vh;
+    top: 87.8vh;
+    left: 4vw;
+    text-align: center;
+}
+#navbuttonbar button{
+    width: 17vw;
+    height: 5vh;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    outline: none;
+    background: none;
+    border: none;
+    color: rgba(150, 150, 150);
+}
+#navrecent{ float: left; }
+#navback{ float: right; }
+#navbuttonbar span:active{ color: white; }
+#navbuttonbar span{ font-size: 5.5vw; }
+
+
+/* Lockscreen elements */
+#lockscreen{
+    background-color: black;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 71vw;
+    height: 80vh;
+    border-radius: 1%;
+    color: white;
+    text-align: center;
+}
+#lockscreentime{
+    margin-top: 5vh;
+    font-size: 9vh;
+    display: block;
+}
+#lockscreendate{
+    margin-top: 1vh;
+    font-size: 3vh;
+    display: block;
+    font-family: "Open Sans", sans-serif;
+}
+#lockscreenday{
+    margin-top: 3vh;
+    font-size: 3vh;
+    display: block;
+    font-family: "Open Sans", sans-serif;
+}
+#lockscreenbattery{
+    color: white;
+    margin-top: 3vh;
+    font-size: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Open Sans", sans-serif;
+}
+#lockscreenbattery i{
+    font-size: 5vw;
+    transform: rotate(90deg);
+}
+#lockscreenbattery .batterylevel{margin-left: 1vw;}
+#lockscreen #finger{
+    position: fixed;
+    width: 100%;
+    margin: auto;
+    bottom: 3vh;
+}
+#lockscreen #finger i{font-size: 9vh;}
+#lockscreen #finger i:active{color:#11EE9D;}
+
+
+
+
+/******** Home Screen elements ******/
+#homescreen{
+    display: none;
+    background-size: cover;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 71vw;
+    height: 80vh;
+    border-radius: 1%;
+    color: white;
+    text-align: center;
+}
+
+/* Status bar elements */
+#statusbar {
+    height: 3vh;
+    background-color: rgba(0,0,0,0.3);
+}
+#statusbar .battery .batteryicon{
+    font-size: 5vw;
+    transform: rotate(90deg);
+}
+#statusbar .battery .batterylevel{
+    font-size: 2vw;
+    margin-left: 1vw;
+}
+#statusbar .battery{
+    display: flex;
+    float: right;
+    justify-content: center;
+    align-items: center;
+    height: 3vh;
+}
+#statusbar .time{
+    font-size: 2vh;
+    padding-top: 0.5vh;
+    float: left;
+    margin-left: 1vw;
+}
+
+/* Apps icons */
+#appdrawer img{
+    width: 9vw;
+    height: 9vw;
+    background-color: white; 
+    padding: 0.5vw;
+    border-radius: 40%;
+}
+#appdrawer .approw{
+    display: flex;
+    align-items: justify;
+    justify-content: space-between;
+    margin: 5vw;
+}
+figure{
+    display: inline-block;
+    margin: 0px;
+    font-family: Helvetica sans-serif;
+}
+#appdrawer figcaption{font-size: 2vw;}
+
+
+
+
+
+
+/* Device content display */
+#contentdisplay{
+    position: absolute;
+    height: 77vh;
+    width: 71vw;
+}
+.app-screen{
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    display: none;
+}
+
+
+/* App Screen Display */
+.app-screen iframe, #weatherdisplay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: none;
+}
+#clockdisplay{background-color: rgba(0,0,41,1);}
+
+
+/* Background image */
+#screenbackground{
+    position:absolute;
+    z-index:-1;
+} 
+#screenbackground img{
+    width: 71vw;
+    height: 80vh;
+    position: absolute;
+    object-fit: content;
+    z-index: 1;
+    filter: brightness(70%);
+}
+#screenbackground img.activebg{z-index:3}
