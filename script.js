@@ -1,3 +1,14 @@
+// Created by Chiku
+
+//thanks to chitu
+/*
+Reference links
+1. crossfading BG 
+https://www.simonbattersby.com/blog/cycling-a-background-image-with-jquery/
+
+2. battery function
+https://medium.com/swlh/detecting-battery-status-in-javascript-732f724b2cc2
+*/
 alert("NOTE:\n\nDue to extensive animations and resources, the output might seem laggy.")
 
 
